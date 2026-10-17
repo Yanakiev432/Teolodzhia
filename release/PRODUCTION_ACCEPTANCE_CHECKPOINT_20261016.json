@@ -1,0 +1,219 @@
+{
+  "checkpointType": "TEOLODZHIYA_WORKGRAPH_PRODUCTION_ACCEPTANCE",
+  "generatedAt": "2026-10-16T19:22:27.172185+00:00",
+  "status": "PRODUCTION_END_TO_END_ACCEPTED_V2_3_1",
+  "authoritativeCatalog": {
+    "activeRows": 2801,
+    "sha256": "3f3ae6d7ff6bb1ca4640f82d910bca2f8c443e15b8e43ed3fc15ec4c02cd0bc2",
+    "indexFormatVersion": "2.5",
+    "mutatedByWorkgraphPhase": false
+  },
+  "workgraph": {
+    "driveRootId": "1rw56mpLd677u7r10UyUi0Cmxfdi_URZh",
+    "driveFileId": "1E3Yx6S0_PiXq0VBli67w204NQ_1uMCY8",
+    "driveName": "workgraph.json.gz",
+    "bytes": 6632,
+    "sha256": "81462a8e51576f0dac96fa97d34c0092a25607e060cb7ade20798d5f2d9e9a2b",
+    "activeSourceKeyFingerprint": "4d6a772d18dee332238223f541af0e69b4a2f31086417766da88cb2c9a31f5ae",
+    "namedWorks": 31,
+    "namedWorkManifestations": 63,
+    "scanSeries": 4,
+    "scanSeriesPages": 86,
+    "clusteredSources": 149,
+    "singletonSources": 2652,
+    "logicalCatalogTotal": 2687,
+    "logicalReduction": 114
+  },
+  "appsScript": {
+    "projectName": "Teolodzhia API Google Drive",
+    "scriptId": "1Dudim6CkF4CHd9BilkqudyfChm_BqLjTfWbBvkG5rUTBzM3zLrmJfME7",
+    "apiVersion": "2.3-corpus-v2.5-workgraph",
+    "productionDeploymentId": "AKfycbzZwuOQCM64fEOPhQtSUVdYEBjLqn0yOgtbgwnOepxYmxsDYxNjzjRkHb1_0OP51wgaYA",
+    "productionVersionNumber": 12,
+    "description": "TEOLODZHIYA API v2.3 workgraph gzip ContentType fix",
+    "status": "LIVE"
+  },
+  "cloudflareWorker": {
+    "service": "teolodzhia-library-proxy",
+    "baseUrl": "https://teolodzhia-library-proxy.yanakiev-ivan.workers.dev",
+    "version": "1.6",
+    "sourceFile": "C:\\Users\\User\\Documents\\Теолоджия\\TEOLODZHIYA_WORKGRAPH_API_v2_3\\cloudflare_worker_teolodzhia_v1_6.js",
+    "sourceNormalizedSha256": "dd41ad53ef25cca5446f83bb5d66f012c5390cd65511de2fd211e2d6a2bf6afb",
+    "routes": [
+      "/health",
+      "/privacy",
+      "/upstream-test",
+      "/search",
+      "/search-works",
+      "/read",
+      "/list",
+      "/works"
+    ],
+    "status": "LIVE"
+  },
+  "httpAcceptance": {
+    "GET /health": {
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "body": "{\"ok\":true,\"service\":\"Teolodzhia Library Proxy\",\"version\":\"1.6\"}"
+    },
+    "GET /": {
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "body": "{\"ok\":true,\"service\":\"Teolodzhia Library Proxy\",\"version\":\"1.6\",\"routes\":[\"/health\",\"/privacy\",\"/upstream-test\",\"/search\",\"/search-works\",\"/read\",\"/list\",\"/works\"]}"
+    },
+    "GET /privacy": {
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "body": "<!doctype html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>Teolodzhia Library Privacy Policy</title>\n</head>\n<body>\n<h1>Teolodzhia Library Privacy Policy</h1>\n<p>\nThis service provides read-only access to the indexed\nTeolodzhia theological research corpus.\n</p>\n<p>\nThe service supports source search, logical-work search,\npassage retrieval, paginated source catalogue listing, and\npaginated logical-work catalogue listing. It does not provide\ngeneral browsing access to the owner's Google Drive.\n</p>\n<p>\nSearch terms and relevant portions of a request may be\nprocessed solely to locate indexed sources and passages.\n</p>\n<p>\nThe service does not sell user data and is not used for advertising.\n</p>\n</body>\n</html>"
+    },
+    "OPTIONS /search-works": {
+      "status": 204,
+      "contentType": "application/json; charset=utf-8",
+      "body": ""
+    },
+    "POST /search-works unauth": {
+      "status": 401,
+      "contentType": "application/json; charset=utf-8",
+      "body": "{\"ok\":false,\"error\":\"Unauthorized\"}"
+    },
+    "POST /works unauth": {
+      "status": 401,
+      "contentType": "application/json; charset=utf-8",
+      "body": "{\"ok\":false,\"error\":\"Unauthorized\"}"
+    },
+    "POST /search unauth": {
+      "status": 401,
+      "contentType": "application/json; charset=utf-8",
+      "body": "{\"ok\":false,\"error\":\"Unauthorized\"}"
+    },
+    "POST /read unauth": {
+      "status": 401,
+      "contentType": "application/json; charset=utf-8",
+      "body": "{\"ok\":false,\"error\":\"Unauthorized\"}"
+    },
+    "POST /list unauth": {
+      "status": 401,
+      "contentType": "application/json; charset=utf-8",
+      "body": "{\"ok\":false,\"error\":\"Unauthorized\"}"
+    }
+  },
+  "security": {
+    "protectedPostRoutesUnauthenticatedStatus": 401,
+    "secretsReadOrExposed": false,
+    "catalogMutation": false,
+    "booksMutation": false,
+    "trashOperations": false
+  },
+  "chatgptLayer": {
+    "architecture": "Custom GPT Action/OpenAPI",
+    "customGPTName": "Теолоджия",
+    "customGPTEditorId": "g-690da4b9898081918e7c909576890706",
+    "status": "LIVE_PUBLISHED",
+    "published": true,
+    "pluginMigration": false,
+    "authentication": "API Key",
+    "secretReadOrExposed": false,
+    "privacyUrl": "https://teolodzhia-library-proxy.yanakiev-ivan.workers.dev/privacy",
+    "schemaFile": "C:\\Users\\User\\Documents\\Теолоджия\\TEOLODZHIYA_WORKGRAPH_API_v2_3\\teolodzhia_action_openapi_v2_3_1_customgpt_compact.yaml",
+    "schemaNormalizedSha256": "a98f3a555a07e4d1a2e0ffdcd0a6f88c3b947e18fa24b1cb4ea566786654b608",
+    "operations": [
+      "libraryHealth",
+      "searchLibraryWorks",
+      "searchLibrary",
+      "readLibrarySource",
+      "listLibraryWorks",
+      "listLibrarySources"
+    ],
+    "instructionsFile": "C:\\Users\\User\\Documents\\Теолоджия\\TEOLODZHIYA_WORKGRAPH_API_v2_3\\CUSTOM_GPT_INSTRUCTIONS_v2_3_1_MERGED.txt",
+    "release": "2.3.1",
+    "schemaSha256": "27a6d4ec46c77c872da8fda5e72e37999c033916cb274a05f13bf81c5fddccfb",
+    "instructionsSha256": "cf1b599c259919a9ae313ff1bc612e0fe7278a9f7337401905b57b8477abde93",
+    "listPageSizeDefault": 20,
+    "legacySearchLibraryQA": "PASS",
+    "listLibraryWorksDefault20Runtime": "PASS"
+  },
+  "next": {
+    "required": null,
+    "status": "COMPLETE",
+    "doNotRedo": [
+      "dedup",
+      "workgraph generation",
+      "Drive sidecar upload",
+      "Apps Script production deployment",
+      "Cloudflare Worker v1.6 deployment",
+      "Custom GPT Action v2.3.1 publication"
+    ]
+  },
+  "updatedAt": "2026-10-17T09:36:13.823088+00:00",
+  "endToEndAcceptance": {
+    "libraryHealth": {
+      "status": "PASS",
+      "response": {
+        "ok": true,
+        "service": "Teolodzhia Library Proxy",
+        "version": "1.6"
+      },
+      "evidence": "C:\\Users\\User\\Documents\\Теолоджия\\acceptance_libraryHealth.json",
+      "screenshot": "C:\\Users\\User\\Documents\\Теолоджия\\acceptance_libraryHealth.png"
+    },
+    "listLibraryWorks": {
+      "status": "PASS",
+      "initialResponseTooLargeHandled": true,
+      "response": {
+        "view": "works",
+        "total": 2687,
+        "sourceTotal": 2801,
+        "logicalReduction": 114,
+        "page": 1,
+        "pageSize": 20,
+        "totalPages": 135,
+        "returned": 20,
+        "hasMore": true,
+        "nextPage": 2,
+        "sort": "title"
+      },
+      "evidence": "C:\\Users\\User\\Documents\\Теолоджия\\acceptance_listLibraryWorks_final.json",
+      "screenshot": "C:\\Users\\User\\Documents\\Теолоджия\\acceptance_listLibraryWorks_final.png"
+    },
+    "listLibrarySources": {
+      "status": "PASS",
+      "initialResponseTooLargeHandled": true,
+      "authoritativeSourceTotal": 2801,
+      "evidence": "C:\\Users\\User\\Documents\\Теолоджия\\acceptance_listLibrarySources.json"
+    },
+    "searchLibraryWorks": {
+      "status": "PASS",
+      "query": "Служебник",
+      "workId": "work_44bef26b61f3cd16b6c1",
+      "sourceKey": "e3d3d1a8c3dea4c63543c6b2",
+      "manifestationCount": 2,
+      "manifestationSourceKeys": [
+        "e3d3d1a8c3dea4c63543c6b2",
+        "fb602be146212abd8afbc40b"
+      ],
+      "evidence": "C:\\Users\\User\\Documents\\Теолоджия\\acceptance_searchLibraryWorks_prompt.json",
+      "uiNeighborEvidence": "C:\\Users\\User\\Documents\\Теолоджия\\acceptance_preview_neighbors.json"
+    },
+    "readLibrarySource": {
+      "status": "PASS",
+      "fileId": "e3d3d1a8c3dea4c63543c6b2",
+      "query": "литургия",
+      "excerptCount": 2,
+      "extractedCharacters": 744962,
+      "chunkCount": 58,
+      "indexFormatVersion": "2.5",
+      "fileTitle": "Служебник.pdf",
+      "evidence": "C:\\Users\\User\\Documents\\Теолоджия\\acceptance_readLibrarySource.json",
+      "uiNeighborEvidence": "C:\\Users\\User\\Documents\\Теолоджия\\acceptance_preview_neighbors.json"
+    }
+  },
+  "acceptanceArtifact": {
+    "file": "C:\\Users\\User\\Documents\\Теолоджия\\TEOLODZHIYA_VSCODE\\.teolodzhia_workgraph\\CUSTOM_GPT_END_TO_END_ACCEPTANCE_20261016.json",
+    "sha256": "0f1480cc66b9713bd580e045729a1882931fc5aa1dfab1bf9235afe524fcd566"
+  },
+  "v231AcceptanceArtifact": {
+    "file": "C:\\Users\\User\\Documents\\Теолоджия\\TEOLODZHIYA_VSCODE\\.teolodzhia_workgraph\\CUSTOM_GPT_V2_3_1_FINAL_ACCEPTANCE_20261017.json",
+    "sha256": "a09db8f757dacab465736a7681a232973abd86ac0ee54ff685444289eb190e09"
+  }
+}
