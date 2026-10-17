@@ -1,0 +1,148 @@
+openapi: 3.1.0
+info:
+  title: Teolodzhia Library Corpus API
+  version: 2.3.1
+  description: Search and read the permanent Teolodzhia corpus in logical-work or source-manifestation view.
+servers:
+  - url: https://teolodzhia-library-proxy.yanakiev-ivan.workers.dev
+
+paths:
+  /search-works:
+    post:
+      operationId: searchLibraryWorks
+      summary: Search logical works with repeated titles collapsed
+      description: Preferred normal search. Each result keeps a concrete sourceKey/defaultSourceKey readable by readLibrarySource; workId itself is not a readable file ID. manifestationSourceKeys lists represented source manifestations.
+      x-openai-isConsequential: false
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/QueryRequest'
+      responses:
+        '200':
+          description: Work-collapsed search response
+
+  /search:
+    post:
+      operationId: searchLibrary
+      summary: Search individual active source manifestations
+      description: Use when distinct files, editions, or manifestations are required. Returned id/sourceKey can be passed to readLibrarySource.
+      x-openai-isConsequential: false
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/QueryRequest'
+      responses:
+        '200':
+          description: Source-level search response
+
+  /read:
+    post:
+      operationId: readLibrarySource
+      summary: Read relevant passages from one indexed source
+      description: fileId must be a concrete sourceKey returned by search or list operations, never originalId or workId.
+      x-openai-isConsequential: false
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReadRequest'
+      responses:
+        '200':
+          description: Relevant excerpts from one source manifestation
+
+  /works:
+    post:
+      operationId: listLibraryWorks
+      summary: List the complete logical Teolodzhia catalog
+      description: Exhaustive logical view. Repeated titles are grouped into works, generic scan pages into scan series, and singletons remain individual entries. Continue nextPage until hasMore is false. total is logical-entry count; sourceTotal is physical/source-record count.
+      x-openai-isConsequential: false
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ListRequest'
+      responses:
+        '200':
+          description: One deterministic page of logical catalog entries
+
+  /list:
+    post:
+      operationId: listLibrarySources
+      summary: List the complete authoritative active source catalog
+      description: Exhaustive source-manifestation inventory. Use for exact source/file/edition/manifestation counts or lists. Continue nextPage until hasMore is false.
+      x-openai-isConsequential: false
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ListRequest'
+      responses:
+        '200':
+          description: One deterministic page of active source records
+
+  /health:
+    get:
+      operationId: libraryHealth
+      summary: Check whether the Teolodzhia library proxy is online
+      x-openai-isConsequential: false
+      responses:
+        '200':
+          description: Health status
+
+components:
+  schemas:
+    QueryRequest:
+      type: object
+      additionalProperties: false
+      required: [query]
+      properties:
+        query:
+          type: string
+          minLength: 1
+        maxResults:
+          type: integer
+          minimum: 1
+          maximum: 10
+          default: 8
+
+    ReadRequest:
+      type: object
+      additionalProperties: false
+      required: [fileId, query]
+      properties:
+        fileId:
+          type: string
+          minLength: 1
+        query:
+          type: string
+          minLength: 1
+        maxExcerpts:
+          type: integer
+          minimum: 1
+          maximum: 5
+          default: 4
+
+    ListRequest:
+      type: object
+      additionalProperties: false
+      properties:
+        page:
+          type: integer
+          minimum: 1
+          default: 1
+        pageSize:
+          type: integer
+          minimum: 1
+          maximum: 500
+          default: 20
+        sort:
+          type: string
+          enum: [title, author, indexed]
+          default: title
