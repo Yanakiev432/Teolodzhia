@@ -2,6 +2,9 @@
   "release": "v2.3.1-final",
   "repository": "Yanakiev432/Teolodzhia",
   "visibility": "public",
+  "snapshotType": "source-config-docs-evidence",
+  "binaryArtifactsInGit": false,
+  "binaryArtifactsReference": "release/BINARY_ARTIFACTS.md",
   "secretScan": "PASS",
   "files": [
     {
@@ -100,6 +103,11 @@
       "sha256": "f6152e6bbbc77bd3a1c4863ee6c2b4e26c2cf11e56d05fc10f639698ceb3c348"
     },
     {
+      "path": "release/BINARY_ARTIFACTS.md",
+      "bytes": 710,
+      "sha256": "e4e6782ea3be9a585bf6636cf98b26a1df0bbea2c8b66db137585b8ae2396877"
+    },
+    {
       "path": "release/CUSTOM_GPT_END_TO_END_ACCEPTANCE_20261016.json",
       "bytes": 4266,
       "sha256": "0f1480cc66b9713bd580e045729a1882931fc5aa1dfab1bf9235afe524fcd566"
@@ -130,19 +138,14 @@
       "sha256": "a2bf8770339f22630856755bf1416e6bed082e4ee8d7f09fc27ed84f44cfa494"
     },
     {
-      "path": "release/TEOLODZHIYA_WORKGRAPH_API_v2_3_1_FINAL_20261017.zip",
-      "bytes": 58657,
-      "sha256": "84cf8b95a9be9236083dcb0ffc7c442a063b23084d1e4d07fad7896e8b5fdfbc"
-    },
-    {
-      "path": "runtime/workgraph.json.gz",
-      "bytes": 6632,
-      "sha256": "81462a8e51576f0dac96fa97d34c0092a25607e060cb7ade20798d5f2d9e9a2b"
+      "path": "runtime/WORKGRAPH_REFERENCE.md",
+      "bytes": 626,
+      "sha256": "f41e3dfaecb4041eeea1730ea82b9b2be2a04e7a43284c2855c323285c6659a2"
     },
     {
       "path": "SECRET_SCAN.json",
-      "bytes": 261,
-      "sha256": "cb9ee72be32ac52fc55f79296bf49c6e934943f4a25ed4c7c137e33362ef6d0c"
+      "bytes": 418,
+      "sha256": "870198d6c3d2f014c90298d1948d01fdc0ad4d99b2e9babde1ebad7302a4a879"
     },
     {
       "path": "SECURITY.md",
