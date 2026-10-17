@@ -1,0 +1,163 @@
+{
+  "release": "v2.3.1-final",
+  "repository": "Yanakiev432/Teolodzhia",
+  "visibility": "public",
+  "secretScan": "PASS",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 134,
+      "sha256": "93c761c88fcffc1131a65a34563b9c72fbb17c42657e901fe64f10f9113aa46d"
+    },
+    {
+      "path": "backend/apps-script/Teolodzhia_Corpus_API_v2_3.gs",
+      "bytes": 68016,
+      "sha256": "5ac4eed28243fa2cc23f1f36430425d7e2aaeff5a4d61ce5b07f377dc79966a6"
+    },
+    {
+      "path": "backend/cloudflare/cloudflare_worker_teolodzhia_v1_6.js",
+      "bytes": 10094,
+      "sha256": "dd41ad53ef25cca5446f83bb5d66f012c5390cd65511de2fd211e2d6a2bf6afb"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 602,
+      "sha256": "a0e11b02393516f0a7dde5f5cd8848627953790d534ef8b1909922c36dddc9d7"
+    },
+    {
+      "path": "config/custom-gpt/INSTRUCTIONS_v2.3.1.txt",
+      "bytes": 9585,
+      "sha256": "cf1b599c259919a9ae313ff1bc612e0fe7278a9f7337401905b57b8477abde93"
+    },
+    {
+      "path": "config/custom-gpt/openapi-v2.3.1.yaml",
+      "bytes": 4585,
+      "sha256": "27a6d4ec46c77c872da8fda5e72e37999c033916cb274a05f13bf81c5fddccfb"
+    },
+    {
+      "path": "docs/00_SYSTEM_OVERVIEW.md",
+      "bytes": 1210,
+      "sha256": "0b2cf3c1136d65b9c26e00be61890d817e92247c427ed2a8abd053fd7d7f040b"
+    },
+    {
+      "path": "docs/01_ARCHITECTURE.md",
+      "bytes": 1341,
+      "sha256": "73d4ab7b1535e753dfdef6cea863ed7e9ea6748bea4d2a9b6d236cd07c75aef8"
+    },
+    {
+      "path": "docs/02_CUSTOM_GPT_CONFIGURATION.md",
+      "bytes": 1567,
+      "sha256": "20d4683036819883bb51b9972f179a7f1a682be979938de053866f86362fee3a"
+    },
+    {
+      "path": "docs/03_ACTIONS_REFERENCE.md",
+      "bytes": 1209,
+      "sha256": "bd2673734717d496fc7866f5593eefc1a67ea54555214222dd2ddf389b969fe4"
+    },
+    {
+      "path": "docs/04_USAGE_GUIDE.md",
+      "bytes": 915,
+      "sha256": "02240d1332b75f79331c6080a3726842a94d389c7beed5485bc5cfaddede5263"
+    },
+    {
+      "path": "docs/05_DATA_MODEL.md",
+      "bytes": 808,
+      "sha256": "637d7aca1ff78f478207a8d5e59fc4ccffcabc7f7fed13cd708f5b26051c81ee"
+    },
+    {
+      "path": "docs/06_OPERATIONS_MAINTENANCE.md",
+      "bytes": 873,
+      "sha256": "6c9b3bfe47665cea6d7acf5cb3a89c2bbb1bc888e11fda00f30a41d50f0e386a"
+    },
+    {
+      "path": "docs/07_DEPLOYMENT_RECOVERY.md",
+      "bytes": 1056,
+      "sha256": "f3ab2f901febe75790ec249a19dad1dcc41eed57bea2c8fe21d84d6a185ee343"
+    },
+    {
+      "path": "docs/08_VALIDATION_ACCEPTANCE.md",
+      "bytes": 1145,
+      "sha256": "04ec6fe84fd3fbf6f29ce3c41fd1250ea7dfe3bc043f833e5e648e8aba42dadc"
+    },
+    {
+      "path": "docs/09_SECURITY_PRIVACY.md",
+      "bytes": 677,
+      "sha256": "986d2a017e7d68ca76cdff5f6a8df199ee5e90e86b8ecc8058e3a018e47c69e2"
+    },
+    {
+      "path": "docs/10_TROUBLESHOOTING.md",
+      "bytes": 821,
+      "sha256": "e126baa362ce1f42e749f72b7e3e5ea5371efd01d41fac988712c9dcfc884ba5"
+    },
+    {
+      "path": "docs/11_RELEASE_FREEZE.md",
+      "bytes": 998,
+      "sha256": "52fb808d58faf262a12277aa4ba2ef297a06c833b16ffec3723a4bfe4b06af7d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4761,
+      "sha256": "f6152e6bbbc77bd3a1c4863ee6c2b4e26c2cf11e56d05fc10f639698ceb3c348"
+    },
+    {
+      "path": "release/CUSTOM_GPT_END_TO_END_ACCEPTANCE_20261016.json",
+      "bytes": 4266,
+      "sha256": "0f1480cc66b9713bd580e045729a1882931fc5aa1dfab1bf9235afe524fcd566"
+    },
+    {
+      "path": "release/CUSTOM_GPT_V2_3_1_FINAL_ACCEPTANCE_20261017.json",
+      "bytes": 3535,
+      "sha256": "a09db8f757dacab465736a7681a232973abd86ac0ee54ff685444289eb190e09"
+    },
+    {
+      "path": "release/DEPLOYMENT_STATE.json",
+      "bytes": 5893,
+      "sha256": "e1f6891ec04a1f71da22ce40e9157f74387842d14a24745148e4111f5204e321"
+    },
+    {
+      "path": "release/FINAL_RELEASE_MANIFEST_v2_3_1.json",
+      "bytes": 4317,
+      "sha256": "fcac89f60f8b0ee9b014542960bf29a69563877e1c5d73f6339dae7a5cc9f593"
+    },
+    {
+      "path": "release/FINAL_V2_3_1_REPORT_20261017.txt",
+      "bytes": 1606,
+      "sha256": "b7e39681fbf63af4db607d802f2513d9ea6ae46d76b2b1f8afb9a37079b84712"
+    },
+    {
+      "path": "release/PRODUCTION_ACCEPTANCE_CHECKPOINT_20261016.json",
+      "bytes": 9372,
+      "sha256": "a2bf8770339f22630856755bf1416e6bed082e4ee8d7f09fc27ed84f44cfa494"
+    },
+    {
+      "path": "release/TEOLODZHIYA_WORKGRAPH_API_v2_3_1_FINAL_20261017.zip",
+      "bytes": 58657,
+      "sha256": "84cf8b95a9be9236083dcb0ffc7c442a063b23084d1e4d07fad7896e8b5fdfbc"
+    },
+    {
+      "path": "runtime/workgraph.json.gz",
+      "bytes": 6632,
+      "sha256": "81462a8e51576f0dac96fa97d34c0092a25607e060cb7ade20798d5f2d9e9a2b"
+    },
+    {
+      "path": "SECRET_SCAN.json",
+      "bytes": 261,
+      "sha256": "cb9ee72be32ac52fc55f79296bf49c6e934943f4a25ed4c7c137e33362ef6d0c"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 302,
+      "sha256": "a9be24ac7931dfde08070cf2c9937d46d5e3a080a1b8eeafc226fbf06c22594e"
+    },
+    {
+      "path": "tools/teolodzhia_workgraph.py",
+      "bytes": 20206,
+      "sha256": "6916002b6c9c5931135d308ae254244dd67b16fe78b75fae695b351d78594926"
+    },
+    {
+      "path": "VERSION",
+      "bytes": 13,
+      "sha256": "535a411750dc3c7cf5b89e62c7bc3646d4c2eb2efdc1dbbdf7f4195c681f9482"
+    }
+  ]
+}
