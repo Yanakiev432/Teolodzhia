@@ -1,0 +1,14 @@
+credentials.json
+token.json
+token_*.json
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
