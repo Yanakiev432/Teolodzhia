@@ -1,0 +1,124 @@
+{
+  "release": "TEOLODZHIYA_WORKGRAPH_API_v2_3_1_FINAL",
+  "generatedAt": "2026-10-17T09:36:13.823088+00:00",
+  "status": "FINAL_ACCEPTED",
+  "appsScriptProductionVersion": 12,
+  "cloudflareWorkerVersion": "1.6",
+  "customGPTRelease": "2.3.1",
+  "customGPTId": "g-690da4b9898081918e7c909576890706",
+  "pluginMigration": false,
+  "sourceRecords": 2801,
+  "logicalEntries": 2687,
+  "qa": {
+    "customGPTV231Publish": "PASS",
+    "listLibraryWorksDefault20Runtime": "PASS",
+    "legacySearchLibrary": "PASS"
+  },
+  "files": [
+    {
+      "path": "acceptance/acceptance_searchLibrary_legacy_v231.json",
+      "bytes": 1259,
+      "sha256": "4a2132c2b1aa59b1651a5a3c3f4a4978036add9edd364d73c7aed508193e5767"
+    },
+    {
+      "path": "acceptance/acceptance_v231_listLibraryWorks_default20.json",
+      "bytes": 812,
+      "sha256": "ef96061acc770661b8aea5617b59a3456f2f3365c1e13d2e0517a10b2925fe17"
+    },
+    {
+      "path": "acceptance/CUSTOM_GPT_END_TO_END_ACCEPTANCE_20261016.json",
+      "bytes": 4266,
+      "sha256": "0f1480cc66b9713bd580e045729a1882931fc5aa1dfab1bf9235afe524fcd566"
+    },
+    {
+      "path": "acceptance/CUSTOM_GPT_V2_3_1_FINAL_ACCEPTANCE_20261017.json",
+      "bytes": 3535,
+      "sha256": "a09db8f757dacab465736a7681a232973abd86ac0ee54ff685444289eb190e09"
+    },
+    {
+      "path": "acceptance/customgpt_v231_publish_gate.json",
+      "bytes": 608,
+      "sha256": "62663c9d9cd60736f62b5591d8e77a3ee3ed88fae6c8584064d870e9ed85129b"
+    },
+    {
+      "path": "acceptance/PRODUCTION_ACCEPTANCE_CHECKPOINT_20261016.json",
+      "bytes": 9372,
+      "sha256": "a2bf8770339f22630856755bf1416e6bed082e4ee8d7f09fc27ed84f44cfa494"
+    },
+    {
+      "path": "acceptance/PRODUCTION_HTTP_ACCEPTANCE.json",
+      "bytes": 2550,
+      "sha256": "8c32d8112e79456b73f9b8bc5126b4eb73d03eeffef851fa7be5df33a55d70e2"
+    },
+    {
+      "path": "audit/AUDIT_MANIFEST.json",
+      "bytes": 1185,
+      "sha256": "04d8391b16480e0b69fded7396b774754b64f3c587a3ce9de51f24f6aa24f79e"
+    },
+    {
+      "path": "audit/FINAL_END_TO_END_REPORT_20261016.txt",
+      "bytes": 2620,
+      "sha256": "3a1095f8659385ba1ac17408a9379afaae2b7a47cd4d766a688501c6ebaf4a91"
+    },
+    {
+      "path": "audit/FINAL_V2_3_1_REPORT_20261017.txt",
+      "bytes": 1871,
+      "sha256": "f3392aa62a3a04c20e3c686a3f2d976275b25ee0b1a274ac0bb04d8f2039dfff"
+    },
+    {
+      "path": "audit/PRODUCTION_DEPLOYMENT_REPORT.txt",
+      "bytes": 2451,
+      "sha256": "56bc8e81bb7fa08493a306eb466a0186a0eed3f9132df54e6a013ba2664a72bc"
+    },
+    {
+      "path": "cloudflare_worker_teolodzhia_v1_6.js",
+      "bytes": 10094,
+      "sha256": "dd41ad53ef25cca5446f83bb5d66f012c5390cd65511de2fd211e2d6a2bf6afb"
+    },
+    {
+      "path": "CUSTOM_GPT_INSTRUCTIONS_v2_3_1_MERGED.txt",
+      "bytes": 9585,
+      "sha256": "cf1b599c259919a9ae313ff1bc612e0fe7278a9f7337401905b57b8477abde93"
+    },
+    {
+      "path": "DEPLOYMENT_STATE.json",
+      "bytes": 5893,
+      "sha256": "e1f6891ec04a1f71da22ce40e9157f74387842d14a24745148e4111f5204e321"
+    },
+    {
+      "path": "RELEASE_NOTES_v2_3_1.txt",
+      "bytes": 693,
+      "sha256": "ad921b95012d32427c748b024dd9ccb0d8a7461a92fc4810a28569baf59c7908"
+    },
+    {
+      "path": "START_HERE_WORKGRAPH_v2_3.txt",
+      "bytes": 5345,
+      "sha256": "8dc1c7d001c06920b2f103955ff2f9adc734660ad56f5eb9936b33423393a440"
+    },
+    {
+      "path": "teolodzhia_action_openapi_v2_3_1_customgpt_compact.yaml",
+      "bytes": 4585,
+      "sha256": "27a6d4ec46c77c872da8fda5e72e37999c033916cb274a05f13bf81c5fddccfb"
+    },
+    {
+      "path": "Teolodzhia_Corpus_API_v2_3.gs",
+      "bytes": 68016,
+      "sha256": "5ac4eed28243fa2cc23f1f36430425d7e2aaeff5a4d61ce5b07f377dc79966a6"
+    },
+    {
+      "path": "teolodzhia_workgraph.py",
+      "bytes": 20206,
+      "sha256": "6916002b6c9c5931135d308ae254244dd67b16fe78b75fae695b351d78594926"
+    },
+    {
+      "path": "TEOLODZHIYA_WORKGRAPH_ACTION_RULES_v2_3.txt",
+      "bytes": 4932,
+      "sha256": "a3e5380345168d1c9735f9d237b92518d20add6e5eb6801ac42ba11d504985a7"
+    },
+    {
+      "path": "workgraph.json.gz",
+      "bytes": 6632,
+      "sha256": "81462a8e51576f0dac96fa97d34c0092a25607e060cb7ade20798d5f2d9e9a2b"
+    }
+  ]
+}
