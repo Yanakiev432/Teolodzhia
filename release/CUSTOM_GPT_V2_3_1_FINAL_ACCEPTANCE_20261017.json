@@ -1,0 +1,83 @@
+{
+  "checkpointType": "TEOLODZHIYA_CUSTOM_GPT_V2_3_1_FINAL_ACCEPTANCE",
+  "generatedAt": "2026-10-17T09:34:22.642801+00:00",
+  "status": "PASS",
+  "release": "2.3.1",
+  "architecture": "Google Drive -> Apps Script v2.3 production v12 -> Cloudflare Worker v1.6 -> Custom GPT Action/OpenAPI v2.3.1",
+  "customGPT": {
+    "name": "Теолоджия",
+    "gptId": "g-690da4b9898081918e7c909576890706",
+    "pluginMigration": false,
+    "published": true,
+    "schema": {
+      "file": "C:\\Users\\User\\Documents\\Теолоджия\\TEOLODZHIYA_WORKGRAPH_API_v2_3\\teolodzhia_action_openapi_v2_3_1_customgpt_compact.yaml",
+      "version": "2.3.1",
+      "sha256": "27a6d4ec46c77c872da8fda5e72e37999c033916cb274a05f13bf81c5fddccfb",
+      "chars": 4584,
+      "listPageSizeDefault": 20,
+      "listPageSizeMaximum": 500,
+      "operations": [
+        "libraryHealth",
+        "searchLibraryWorks",
+        "searchLibrary",
+        "readLibrarySource",
+        "listLibraryWorks",
+        "listLibrarySources"
+      ]
+    },
+    "instructions": {
+      "file": "C:\\Users\\User\\Documents\\Теолоджия\\TEOLODZHIYA_WORKGRAPH_API_v2_3\\CUSTOM_GPT_INSTRUCTIONS_v2_3_1_MERGED.txt",
+      "sha256": "cf1b599c259919a9ae313ff1bc612e0fe7278a9f7337401905b57b8477abde93",
+      "pageSize20Rule": true
+    },
+    "authentication": "API Key",
+    "secretReadOrExposed": false,
+    "privacyUrl": "https://teolodzhia-library-proxy.yanakiev-ivan.workers.dev/privacy"
+  },
+  "polish": {
+    "status": "PASS",
+    "change": "ListRequest.pageSize default 250 -> 20 in Custom GPT schema; instructions start list operations at pageSize=20.",
+    "backendContractChanged": false,
+    "backendMaximumPageSize": 500,
+    "catalogMutated": false
+  },
+  "legacySearchLibraryQA": {
+    "status": "PASS",
+    "query": "Служебник",
+    "maxResults": 5,
+    "operation": "searchLibrary",
+    "sourceLevel": true,
+    "knownSourceKeys": [
+      "e3d3d1a8c3dea4c63543c6b2",
+      "fb602be146212abd8afbc40b"
+    ],
+    "searchLibraryWorksUsed": false,
+    "knowledgeUsed": false,
+    "evidence": "C:\\Users\\User\\Documents\\Теолоджия\\acceptance_searchLibrary_legacy_v231.json"
+  },
+  "previousEndToEndAcceptance": "C:\\Users\\User\\Documents\\Теолоджия\\TEOLODZHIYA_VSCODE\\.teolodzhia_workgraph\\CUSTOM_GPT_END_TO_END_ACCEPTANCE_20261016.json",
+  "invariants": {
+    "authoritativeSourceRecords": 2801,
+    "logicalCatalogEntries": 2687,
+    "logicalReduction": 114,
+    "appsScriptProductionVersion": 12,
+    "cloudflareWorkerVersion": "1.6",
+    "catalogSha256": "3f3ae6d7ff6bb1ca4640f82d910bca2f8c443e15b8e43ed3fc15ec4c02cd0bc2",
+    "workgraphSha256": "81462a8e51576f0dac96fa97d34c0092a25607e060cb7ade20798d5f2d9e9a2b",
+    "backendRedeployedFor231": false,
+    "driveMutatedFor231": false
+  },
+  "updatedAt": "2026-10-17T09:36:13.823088+00:00",
+  "polishRuntimeAcceptance": {
+    "status": "PASS",
+    "operation": "listLibraryWorks",
+    "publishedSchemaVersion": "2.3.1",
+    "schemaDefaultPageSize": 20,
+    "exactOperationTestButtonDistance": 0,
+    "apiSuccessSignal": true,
+    "responseTooLargeErrorObserved": false,
+    "uiValue20Observed": true,
+    "note": "Custom GPT renders response fields as separate accessibility nodes; runtime success/no-oversize is combined with exact published schema default=20 gate.",
+    "evidence": "C:\\Users\\User\\Documents\\Теолоджия\\acceptance_v231_listLibraryWorks_default20.json"
+  }
+}
