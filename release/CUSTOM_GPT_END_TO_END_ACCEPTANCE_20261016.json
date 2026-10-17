@@ -1,0 +1,112 @@
+{
+  "checkpointType": "TEOLODZHIYA_CUSTOM_GPT_END_TO_END_ACCEPTANCE",
+  "generatedAt": "2026-10-16T21:15:05.679812+00:00",
+  "status": "PASS",
+  "architecture": "Google Drive -> Apps Script v2.3 -> Cloudflare Worker v1.6 -> Custom GPT Action/OpenAPI",
+  "customGPT": {
+    "name": "Теолоджия",
+    "editorId": "g-690da4b9898081918e7c909576890706",
+    "published": true,
+    "visibilitySignal": "Everyone / Published to GPT Store",
+    "pluginMigration": false,
+    "schema": {
+      "file": "C:\\Users\\User\\Documents\\Теолоджия\\TEOLODZHIYA_WORKGRAPH_API_v2_3\\teolodzhia_action_openapi_v2_3_customgpt_compact.yaml",
+      "normalizedChars": 4585,
+      "normalizedSha256": "a98f3a555a07e4d1a2e0ffdcd0a6f88c3b947e18fa24b1cb4ea566786654b608",
+      "exactEditorGate": true,
+      "operations": [
+        "libraryHealth",
+        "searchLibraryWorks",
+        "searchLibrary",
+        "readLibrarySource",
+        "listLibraryWorks",
+        "listLibrarySources"
+      ],
+      "parseErrors": 0
+    },
+    "authentication": {
+      "type": "API Key",
+      "secretReadOrExposed": false,
+      "privacyUrl": "https://teolodzhia-library-proxy.yanakiev-ivan.workers.dev/privacy"
+    }
+  },
+  "acceptance": {
+    "libraryHealth": {
+      "status": "PASS",
+      "response": {
+        "ok": true,
+        "service": "Teolodzhia Library Proxy",
+        "version": "1.6"
+      },
+      "evidence": "C:\\Users\\User\\Documents\\Теолоджия\\acceptance_libraryHealth.json",
+      "screenshot": "C:\\Users\\User\\Documents\\Теолоджия\\acceptance_libraryHealth.png"
+    },
+    "listLibraryWorks": {
+      "status": "PASS",
+      "initialResponseTooLargeHandled": true,
+      "response": {
+        "view": "works",
+        "total": 2687,
+        "sourceTotal": 2801,
+        "logicalReduction": 114,
+        "page": 1,
+        "pageSize": 20,
+        "totalPages": 135,
+        "returned": 20,
+        "hasMore": true,
+        "nextPage": 2,
+        "sort": "title"
+      },
+      "evidence": "C:\\Users\\User\\Documents\\Теолоджия\\acceptance_listLibraryWorks_final.json",
+      "screenshot": "C:\\Users\\User\\Documents\\Теолоджия\\acceptance_listLibraryWorks_final.png"
+    },
+    "listLibrarySources": {
+      "status": "PASS",
+      "initialResponseTooLargeHandled": true,
+      "authoritativeSourceTotal": 2801,
+      "evidence": "C:\\Users\\User\\Documents\\Теолоджия\\acceptance_listLibrarySources.json"
+    },
+    "searchLibraryWorks": {
+      "status": "PASS",
+      "query": "Служебник",
+      "workId": "work_44bef26b61f3cd16b6c1",
+      "sourceKey": "e3d3d1a8c3dea4c63543c6b2",
+      "manifestationCount": 2,
+      "manifestationSourceKeys": [
+        "e3d3d1a8c3dea4c63543c6b2",
+        "fb602be146212abd8afbc40b"
+      ],
+      "evidence": "C:\\Users\\User\\Documents\\Теолоджия\\acceptance_searchLibraryWorks_prompt.json",
+      "uiNeighborEvidence": "C:\\Users\\User\\Documents\\Теолоджия\\acceptance_preview_neighbors.json"
+    },
+    "readLibrarySource": {
+      "status": "PASS",
+      "fileId": "e3d3d1a8c3dea4c63543c6b2",
+      "query": "литургия",
+      "excerptCount": 2,
+      "extractedCharacters": 744962,
+      "chunkCount": 58,
+      "indexFormatVersion": "2.5",
+      "fileTitle": "Служебник.pdf",
+      "evidence": "C:\\Users\\User\\Documents\\Теолоджия\\acceptance_readLibrarySource.json",
+      "uiNeighborEvidence": "C:\\Users\\User\\Documents\\Теолоджия\\acceptance_preview_neighbors.json"
+    }
+  },
+  "invariants": {
+    "authoritativeSourceRecords": 2801,
+    "logicalCatalogEntries": 2687,
+    "logicalReduction": 114,
+    "catalogSha256": "3f3ae6d7ff6bb1ca4640f82d910bca2f8c443e15b8e43ed3fc15ec4c02cd0bc2",
+    "workgraphSha256": "81462a8e51576f0dac96fa97d34c0092a25607e060cb7ade20798d5f2d9e9a2b",
+    "catalogMutatedByAcceptance": false,
+    "backendRedeployedByAcceptance": false
+  },
+  "doNotRedo": [
+    "dedup",
+    "workgraph generation",
+    "Drive sidecar upload",
+    "Apps Script production deployment",
+    "Cloudflare Worker v1.6 deployment",
+    "Custom GPT Action v2.3 publication"
+  ]
+}
