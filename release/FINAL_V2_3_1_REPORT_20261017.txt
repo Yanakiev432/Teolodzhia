@@ -1,0 +1,47 @@
+TEOLODZHIYA v2.3.1 — FINAL RELEASE REPORT
+Generated: 2026-10-17T09:34:22.642801+00:00
+
+STATUS
+- WORKGRAPH_V2_3_1_FINAL_ACCEPTED
+- Architecture remains Custom GPT Action/OpenAPI; NO plugin/MCP migration.
+- Apps Script production version: 12 (unchanged by v2.3.1 polish)
+- Cloudflare Worker: v1.6 (unchanged)
+- Catalog: 2801 authoritative sources
+- Logical catalog: 2687 entries
+- Logical reduction: 114
+
+v2.3.1 POLISH
+- Custom GPT OpenAPI info.version: 2.3.1
+- ListRequest.pageSize default: 20 (was 250)
+- ListRequest.pageSize maximum remains 500
+- Custom GPT instructions explicitly start listLibraryWorks/listLibrarySources at pageSize=20
+- No backend, Drive, workgraph, or catalog mutation
+
+CUSTOM GPT PUBLICATION
+- Instructions exact gate: PASS
+- Schema exact gate: PASS
+- Six operations: PASS
+- Schema parse errors: 0
+- API Key auth preserved
+- Privacy URL preserved
+- Update clicked once
+- Published signal: PASS
+- Schema SHA-256: 27a6d4ec46c77c872da8fda5e72e37999c033916cb274a05f13bf81c5fddccfb
+- Instructions SHA-256: cf1b599c259919a9ae313ff1bc612e0fe7278a9f7337401905b57b8477abde93
+
+LEGACY searchLibrary QA
+- PASS
+- query: Служебник
+- maxResults: 5
+- source-level operation: searchLibrary
+- returned known sourceKey e3d3d1a8c3dea4c63543c6b2
+- returned known sourceKey fb602be146212abd8afbc40b
+- searchLibraryWorks not used for this test
+- Knowledge not used for this test
+
+Previous v2.3 end-to-end tests remain valid:
+- libraryHealth PASS
+- listLibraryWorks PASS
+- listLibrarySources PASS
+- searchLibraryWorks PASS
+- readLibrarySource PASS
